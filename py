@@ -14,7 +14,7 @@ states = soup.find_all('a', class_ = 'mt_a')
 for state in states:
     final['state'].append(state.text)
     final['date'].append(date)
-    final['cases'].append(date)
+    final['cases'].append(date) #used date as a placeholder
     
 df_final = pd.DataFrame(final)
 
